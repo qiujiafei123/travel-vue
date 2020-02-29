@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import fastClick from 'fastclick'// 解决移动端点击时间有300ms延迟
+import './assets/styles/reset.css'// 解决移动端适配
+import './assets/styles/border.css'// 解决移动端1像素边框
 
 Vue.config.productionTip = false
-
+fastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
