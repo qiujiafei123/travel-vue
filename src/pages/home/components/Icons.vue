@@ -16,64 +16,20 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
         autoplay: false
-      },
-      iconList: [
-        {
-          id: '1',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '景点门票'
-        },
-        {
-          id: '2',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '滑雪季节'
-        },
-        {
-          id: '3',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '景点门票景点门票景点门票'
-        },
-        {
-          id: '4',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '滑雪季节'
-        },
-        {
-          id: '5',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '景点门票'
-        },
-        {
-          id: '6',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '滑雪季节'
-        },
-        {
-          id: '7',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '景点门票'
-        },
-        {
-          id: '8',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '滑雪季节'
-        },
-        {
-          id: '9',
-          imgUrl: 'http://s.qunarzz.com/homenode/images/touchheader/flight.png',
-          desc: '一日游'
-        }
-      ]
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
