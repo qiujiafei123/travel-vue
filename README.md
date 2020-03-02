@@ -1,6 +1,7 @@
 # travel-vue
 
 > A Vue.js project
+
 ![效果图](https://github.com/qiujiafei123/travel-vue/blob/master/static/28.gif)
 
 ## Build Setup
