@@ -1,7 +1,7 @@
 # travel-vue
 
 > A Vue.js project
-![效果图](https://pic2.hanmaker.com/b9ecf54a1a8781b17a.gif)
+![效果图](https://github.com/qiujiafei123/travel-vue/blob/master/static/28.gif)
 
 ## Build Setup
 
