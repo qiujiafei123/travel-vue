@@ -1,6 +1,7 @@
 # travel-vue
 
 > A Vue.js project
+![效果图](https://pic2.hanmaker.com/b9ecf54a1a8781b17a.gif)
 
 ## Build Setup
 
